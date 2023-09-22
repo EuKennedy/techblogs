@@ -1,58 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-  padding: 0;
   margin: 0;
-  margin-top: 0.7vh;
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  background-color: white;
+  background-color: #fff3f3;
   color: black;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 .header-navbar{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 8rem;
+  margin-top: 5vh;
 }
 
 .header-navbar a {
   text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 .header-navbar a:hover{
-  color: rgb(255, 0, 212);
+  color: #ff2981;
   transition: 0.5s;
 }
 
 .header-father{
+  justify-content: center;
   margin-top: 15vh;
+}
+
+.header-father img{
+  width: 40%;
+  margin-top: -80px;
+}
+
+.header-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .header-content h2{
   font-size: 50px;
-  line-height: 60px;
   margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.header-props span{
+  color: #ff2981;
 }
 
 .header-content p {
   margin-bottom: 2rem;
-  line-height: 20px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.header-content button {
-  background-color: #E50062;
+.button-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff2981;
   color: white;
   border: none;
-  padding: 30px;
-  font-size: 20px;
-  width: 30%;
+  padding: 10px;
+  font-size: 15px;
+  width: 50%;
   border-radius: 15px;
+  gap: 1rem;
+}
+
+.button-header a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
