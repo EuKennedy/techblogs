@@ -5,7 +5,7 @@ const Mid = () => {
     <div>
       <section className='Mid-content'>
         <div>
-            <h1>CONECTE-SE COM DIVERSOS DEV PELO MUNDO E EXPANDA SEU CONHECIMENTO</h1>
+            <h1>CONECTE-SE COM DIVERSOS DEV's PELO MUNDO E EXPANDA SEU CONHECIMENTO</h1>
         </div>
         <div className="mid-carousel">
             <img src="https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-business.webp" alt></img>
