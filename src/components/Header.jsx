@@ -1,6 +1,7 @@
 import { HiOutlineUser } from "react-icons/hi";
 import Bg from './img/bg.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,14 +9,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const carousel = [ 
- { id: '1', Image: 'https://distrito.me/wp-content/themes/distrito/img/grupo3.webp' },
- { id: '2', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
- { id: '3', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
- { id: '4', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
- { id: '5', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
+ { id: '1', Image: 'https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1380&t=st=1695496173~exp=1695496773~hmac=ae45710588f978f50cfa473faa2832cd74def961bfadb356086917b5b8765929' },
+ { id: '2', Image: 'https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1380&t=st=1695496173~exp=1695496773~hmac=ae45710588f978f50cfa473faa2832cd74def961bfadb356086917b5b8765929' },
+ { id: '3', Image: 'https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1380&t=st=1695496173~exp=1695496773~hmac=ae45710588f978f50cfa473faa2832cd74def961bfadb356086917b5b8765929' },
+ { id: '4', Image: 'https://img..com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1380&t=st=1695496173~exp=1695496773~hmac=ae45710588f978f50cfa473faa2832cd74def961bfadb356086917b5b8765929' },
+ { id: '5', Image: 'https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1380&t=st=1695496173~exp=1695496773~hmac=ae45710588f978f50cfa473faa2832cd74def961bfadb356086917b5b8765929' },
 
 ]
-
 
 const Header = () => {
   return (
@@ -35,7 +35,7 @@ const Header = () => {
                   <Swiper
                   slidesPerView={1}
                   pagination={{clickable: true}}
-                  navigation
+                  navigation={{clickable: true}}
                   >
                     {carousel.map((item) =>(
                       <SwiperSlide key={item.id}>
@@ -45,7 +45,6 @@ const Header = () => {
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                  <h1>olá</h1>
                 </div>
               </div>
               

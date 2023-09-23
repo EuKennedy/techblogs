@@ -16,7 +16,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 
 .header-navbar a {
@@ -87,32 +87,56 @@ body{
   text-align: center;
 }
 
-navigation{
-  color: #ff2981;
-  size: 30px;
+.slide-item{
+  
 }
 
-.div-mae{
+.post-content{
+ display: flex;
+ flex-direction: row;
+ padding-left: 10%;
+ padding-right: 10%;
+ gap: 50px;
+ margin-top: 10vh;
+}
+
+.card-post-one .card-post-two .card-post-three{
   display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 50px;
-  align-items: center;
-  flex-direction: row;
-
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
-.post1{
-  width: 30%;
+.card-post-one h1 {
+  font-size: 20px;
 }
 
-.div-mae2{
+.card-post-two h1 {
+  font-size: 20px;
+}
+
+.card-post-three h1 {
+  font-size: 20px;
+}
+
+.card-post-one img{
+  border-radius: 10px;
+}
+
+.card-post-two img{
+  border-radius: 10px;
+}
+
+.card-post-three img{
+  border-radius: 10px;
+}
+
+.post-content-two{
   display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 50px;
-  align-items: center;
   flex-direction: row;
-
-
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 50px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
