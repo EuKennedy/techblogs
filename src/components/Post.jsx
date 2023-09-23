@@ -19,7 +19,7 @@ const Mid = () => {
 
           <h4>Uma Jornada Além dos Limites</h4>
           <p>
-            A RV nos permite explorar lugares que jamais poderíamos visitar, desde o fundo do oceano até planetas distantes no espaço sideral. Ao vestir um headset de RV, somos transportados para ambientes virtuais que podem variar de jogos emocionantes a experiências educacionais envolventes.
+            A RV nos permite explorar lugares incriveis que jamais poderíamos visitar, desde o fundo do oceano até planetas distantes no espaço sideral. Ao vestir um headset de RV, somos transportados para ambientes virtuais que podem variar de jogos emocionantes a experiências educacionais envolventes.
           </p>
 
               

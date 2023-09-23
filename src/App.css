@@ -91,3 +91,28 @@ navigation{
   color: #ff2981;
   size: 30px;
 }
+
+.div-mae{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 50px;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.post1{
+  width: 30%;
+}
+
+.div-mae2{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 50px;
+  align-items: center;
+  flex-direction: row;
+
+
+}
