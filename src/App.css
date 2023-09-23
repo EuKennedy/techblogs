@@ -82,3 +82,12 @@ body{
   color: white;
   font-weight: 600;
 }
+
+.header-section{
+  text-align: center;
+}
+
+navigation{
+  color: #ff2981;
+  size: 30px;
+}

@@ -4,7 +4,7 @@ const Mid = () => {
   return (
     <div>
       <section className='Mid-content'>
-    sadsa
+      
       </section>
     </div>
   )

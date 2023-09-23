@@ -1,5 +1,20 @@
 import { HiOutlineUser } from "react-icons/hi";
 import Bg from './img/bg.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+const carousel = [ 
+ { id: '1', Image: 'https://distrito.me/wp-content/themes/distrito/img/grupo3.webp' },
+ { id: '2', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
+ { id: '3', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
+ { id: '4', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
+ { id: '5', Image: 'https://distrito.me/wp-content/uploads/2022/10/ilustra-distrito-startups.webp' },
+
+]
 
 
 const Header = () => {
@@ -15,16 +30,25 @@ const Header = () => {
             <a href="#">CADASTRAR</a>
         </div>
           <section className="header-father">
-            <div className="header-content">
-              <div className="header-props">
-                <h2><span>Tecnologia</span><br></br>Conhecimento<br></br><span>Desenvolvimento</span><br></br>Carreira</h2>
-                <p>Busque e implemente com o Distrito as melhores<br></br>soluções para resolver os desafios e impulsionar o<br></br>crescimento da sua empresa</p>
-                <div className="button-header">
-                  <a href="#">CRIAR MINHA CONTA</a> <a><HiOutlineUser size={30} color="white"/></a>
+              <div className="header-section">
+                <div className="carousel">
+                  <Swiper
+                  slidesPerView={1}
+                  pagination={{clickable: true}}
+                  navigation
+                  >
+                    {carousel.map((item) =>(
+                      <SwiperSlide key={item.id}>
+                        <img src={item.Image} 
+                        alt="slider"
+                        className="slide-item" />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                  <h1>olá</h1>
                 </div>
               </div>
-              <img src={Bg} alt="img"/>
-            </div>
+              
           </section>
       </section>
     </div>
