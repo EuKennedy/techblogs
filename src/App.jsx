@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 import Header from './components/Header'
-import Mid from './components/Post'
+import Posts from './components/Post'
 
 function App() {
   
@@ -12,7 +12,7 @@ function App() {
         <Header />
       </div>
       <div className="container-mid">
-        <Mid />
+        <Posts />
       </div>
     </>
   )
