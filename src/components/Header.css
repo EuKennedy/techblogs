@@ -1,0 +1,154 @@
+.header-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3vh;
+}
+  
+.header-navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+  
+.header-navbar a:hover{
+    color: #9a0aee;
+    transition: 0.5s;
+}
+  
+.header-father{
+    justify-content: center;
+    margin-top: 15vh;
+}
+  
+.header-father img{
+    width: 40%;
+    margin-top: -80px;
+}
+  
+.header-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+  
+.header-content h2{
+    font-size: 50px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+  
+.header-content p {
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+  
+.button-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    border-radius: 15px;
+    gap: 1rem;
+}
+  
+.button-header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+  
+.header-section{
+    text-align: center;
+}
+  
+.slide-item{
+    
+}
+  
+.carousel{
+    margin-top: -8vh;
+}
+ 
+.carousel img{
+    width: 10%;
+}
+ 
+.carousel h1 {
+    color: #160a28;
+}
+
+.swiper{
+    padding: 30px;
+}
+  
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+  
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-color: #9a0aee
+  ;
+    font-weight: bolder !important;
+    --swiper-navigation-sides-offset: 350px;
+    --swiper-navigation-size: 50px;
+}
+  
+.swiper-pagination-bullet{
+    --swiper-pagination-bullet-inactive-color:#000000;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-color: #9a0aee;
+  ;
+   
+}
+  
+.slide-item img{
+    border-radius: 25px;
+    width: 40%;
+}
+  
+.slide-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    gap: 10px;
+}
+  
+.slide-item h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+  
+.slide-item p {
+    font-weight: 500;
+    font-size: 18px;
+}
+  
+.slide-item a {
+    text-decoration: none;
+    color: white;
+    background-color: #9a0aee
+  ;
+    padding: 15px;
+    border-radius: 10px;
+}
+  
+.slide-item a:hover{
+    background-color: #da2570;
+    transition: 1s;
+}
+  

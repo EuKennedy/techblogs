@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import Posts from './components/Post'
 
+
 function App() {
   
   return (
@@ -13,6 +14,9 @@ function App() {
       </div>
       <div className="container-mid">
         <Posts />
+      </div>
+      <div className="container-footer">
+
       </div>
     </>
   )

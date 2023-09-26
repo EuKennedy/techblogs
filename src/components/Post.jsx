@@ -1,10 +1,11 @@
 import React from 'react'
-import Post from './img/post1.jpg'
-import Post2 from './img/post2.jpg'
+import Post from './img/post1.png'
+import Post2 from './img/post2.png'
 import Post3 from './img/post3.png'
 import Post4 from './img/post4.png'
-import Post5 from './img/post5.jpg'
+import Post5 from './img/post5.png'
 import Post6 from './img/post6.png'
+import './Post.css'
 
 const Mid = () => {
   return (
@@ -21,7 +22,7 @@ const Mid = () => {
           <img src={Post2} alt="" 
           width={350}/>
           <h1>Deep techs: as startups que dominam tecnologias complexas</h1><br />
-          <p>Com o avanço tecnológico, sabemos que tudo pode ser aprimorado para níveis bem superiores, sejam ......<br /><br /><a href="#"> clique aqui para ler mais.</a></p>
+          <p>Com o avanço tecnológico, sabemos que tudo pode ser aprimorado para níveis bem superiores, sejam...<br /><br /><a href="#"> clique aqui para ler mais.</a></p>
         </div>
 
         <div className="card-post-three">
@@ -33,28 +34,28 @@ const Mid = () => {
       </section>
 
 
-      <section className='post-content-two'>
-        <div className="card-post-one">
+      <div className='post-content-two'>
+        <div className="card-post-for">
           <img src={Post4} alt="" 
           width={350}/>
           <h1>10 fatores para validar uma nova tecnologia!</h1><br />
           <p>Com o mercado cada vez mais competitivo, é natural surgirem novas tecnologias, cada uma com uma fun...<br /><br /><a href="#"> clique aqui para ler mais.</a></p>
         </div>
 
-        <div className="card-post-two">
+        <div className="card-post-five">
           <img src={Post5} alt="" 
           width={350}/>
           <h1>Desafios e oportunidades para empreender em 2023!</h1><br />
           <p>Antes de iniciar um novo negócio, todo empresário e empreendedor deve conhecer desafios e oportuni...<br /><br /><a href="#"> clique aqui para ler mais.</a></p>
         </div>
 
-        <div className="card-post-three">
+        <div className="card-post-six">
           <img src={Post6} alt="" 
           width={350}/>
           <h1>Data augmentation: o que é e como usar essa técnica?</h1><br />
           <p>Você já ouviu falar em data augmentation? Esse é um conjunto de técnicas utilizadas para ampliar...<br /><br /><a href="#"> clique aqui para ler mais.</a></p>
         </div>
-      </section>
+      </div>
     </div>
   )
 }
