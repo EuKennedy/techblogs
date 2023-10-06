@@ -37,7 +37,7 @@ const Header = () => {
             <a href="#">DESAFIOS</a>
             <a href="#">QUEM SOMOS</a>
             <a href="../login">LOGIN</a>
-            <a href="#">CADASTRAR</a>
+            <a href="../register">CADASTRAR</a>
         </div>
           <section className="header-father">
               <div className="header-section">

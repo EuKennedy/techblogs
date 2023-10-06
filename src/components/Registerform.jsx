@@ -1,32 +1,58 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Form.css'
+import {validarEmail, validarSenha} from '../utils/validadores'
 
-const handleChange = (e) =>{
-    console.log('Digiando...', e.target.name, e.target.value)
-}
 
-const Form = () => {
+const Registerform = (type, text, onClick) => {
+    const [ loading, setLoading,] = useState()
+    const [form, setForm,] = useState([])
+
+
+    const handleChange = (e) =>{
+        console.log('Digiando...', e.target.name, e.target.value)
+        setForm({...form, [e.target.name]: e.target.value})
+        console.log('Form', form)
+    }
+
+    const validadorInput = () => {
+        return validarEmail(form.email) && validarSenha(form.password)
+    }
+
+    console.log('Form está válido', validadorInput())
+
+    const handleSubmit = async (event) =>{
+        event.preventDefault();
+        try {
+
+            alert('Cadastrado com sucesso!')
+        } catch (err) {
+
+            alert('Parece que houve um erro, por favor aperte F5!' + err)
+        }
+    }
+
   return (
     <div className="container-father">
         <div className="form-container">     
-            <p className="title">Login</p>
+            <p className="title">Cadastrar</p>
             <form className="form">
                 <div className="inputs">
-                    <label for="email">Email</label>
+                    <label for="email">Escolha seu nome de usuário</label>
                     <input type="email" Name="email" className="Email" onChange={handleChange}/>
                 </div>
                 <div className="inputs">
-                    <label for="password">Senha</label>
+                    <label for="password">Escolha sua senha</label>
                     <input type="password" Name="password" className="password" onChange={handleChange}/>
                     <div className="forgot">
-                        <a rel="noopener noreferrer" href="#">Esqueceu sua senha ?</a>
+                        <a rel="noopener noreferrer" href="#"></a>
                     </div>
                 </div>
-                <button className="sign">Entrar</button>
+                <button className="sign" type='submit' text='Cadastrar' onClick={handleSubmit}
+                >Cadastrar</button>
             </form>
             <div className="social-message">
                 <div className="line"></div>
-                    <p className="message">Entrar com redes sociais</p>
+                    <p className="message">Cadastrar com contas sociais ?</p>
                 <div className="line"></div>
             </div>
             <div className="social-icons">
@@ -52,4 +78,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default Registerform
